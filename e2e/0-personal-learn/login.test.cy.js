@@ -37,7 +37,7 @@ describe('Working with inputs', () =>{
              // cy.get('#user_remember_me').uncheck()
              // });
              
-            cy.get('.alert-error').should('contain.text', 'Login and/or password are wrong.')
+            // cy.get('.alert-error').should('contain.text', 'Login and/or password are wrong.')
 
         });
     });

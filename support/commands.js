@@ -62,7 +62,10 @@ Cypress.Commands.add('login', (username,password) => {
     cy.get('input[name="user_password"]').should('have.value', password)
 
     cy.get('input[name="submit"]').click()
-
+      // it('Should check the checkbox', () => {
+      //        cy.get('#user_remember_me').check()
+      //        cy.get('#user_remember_me').uncheck()
+      //        });
 })
 
 Cypress.Commands.add('paybill', (payee, account, amount, date, description) => {
