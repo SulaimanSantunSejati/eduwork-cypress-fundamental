@@ -2,12 +2,10 @@
 
 describe('Working with inputs', () => {
     
-    // Kunjungi website
     it('Visit the website', () => {
         cy.visit('https://www.saucedemo.com/')
     });
 
-    // Coba login dengan username dan password dari fixture
     it('Should try to login', () => {
         cy.fixture("usersss").then(usersss => {
             const username = usersss.username
@@ -34,6 +32,7 @@ describe('Working with inputs', () => {
         cy.get('.inventory_item').first().find('button').click(); 
         
     });
+
     it('Select sorting option', () => {
     cy.get('.product_sort_container').select('Name (A to Z)'); 
     });

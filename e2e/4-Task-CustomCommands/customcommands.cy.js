@@ -9,12 +9,11 @@ describe('commands for paybill', () => {
             const password = user.password
             
             cy.login(username, password)
-            cy.url().should('include', '/bank/account-summary.html'); // Ganti dengan URL setelah login
+            cy.url().should('include', '/bank/account-summary.html'); 
         }); 
     });
 
     it('Should make a payment', () => {
-        
         cy.paybill('Sprint', 'Loan', '1000', '2024-09-20', 'Test Payment')
     });
     
